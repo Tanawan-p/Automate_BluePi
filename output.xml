@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20220508 03:04:32.017" schemaversion="2" generator="Robot 4.1.2 (Python 2.7.18 on darwin)">
+<suite source="/Users/TANAWAN/Documents/Automate_BluePi/Testcase.robot" id="s1" name="Testcase">
+<test id="s1-t1" name="TC_01 Add item 1 item">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:04:32.703" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:04:40.194" starttime="20220508 03:04:32.701"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:04:40.338" starttime="20220508 03:04:40.194"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:04:40.339" starttime="20220508 03:04:40.339"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:40.339" starttime="20220508 03:04:32.699"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:04:40.343" level="INFO">Typing text 'ข้อสอบ BluePi' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:04:42.047" starttime="20220508 03:04:40.343"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:04:42.048" starttime="20220508 03:04:42.047"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:42.048" starttime="20220508 03:04:40.340"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:04:43.080" starttime="20220508 03:04:42.049"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:04:43.082" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:04:44.125" starttime="20220508 03:04:43.081"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:44.125" starttime="20220508 03:04:42.048"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:04:45.168" starttime="20220508 03:04:44.126"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:04:45.169" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:04:46.226" starttime="20220508 03:04:45.168"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:46.226" starttime="20220508 03:04:44.126"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:04:46.861" starttime="20220508 03:04:46.226"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:46.861" starttime="20220508 03:04:32.697"/>
+</test>
+<test id="s1-t2" name="TC_02 Add more than 1 items">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:04:46.865" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:04:52.812" starttime="20220508 03:04:46.864"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:04:53.440" starttime="20220508 03:04:52.813"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:04:53.441" starttime="20220508 03:04:53.440"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:53.441" starttime="20220508 03:04:46.864"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อแรก</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:04:53.444" level="INFO">Typing text 'ข้อสอบ BluePi ข้อแรก' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:04:55.138" starttime="20220508 03:04:53.443"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:04:55.139" starttime="20220508 03:04:55.138"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:55.139" starttime="20220508 03:04:53.442"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:04:56.170" starttime="20220508 03:04:55.140"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:04:56.171" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:04:57.229" starttime="20220508 03:04:56.171"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:57.229" starttime="20220508 03:04:55.140"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสอง</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:04:57.230" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสอง' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:04:58.839" starttime="20220508 03:04:57.230"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:04:58.840" starttime="20220508 03:04:58.840"/>
+</kw>
+<status status="PASS" endtime="20220508 03:04:58.841" starttime="20220508 03:04:57.229"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:04:59.872" starttime="20220508 03:04:58.842"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:04:59.873" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:05:00.908" starttime="20220508 03:04:59.872"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:00.909" starttime="20220508 03:04:58.841"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสาม</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:00.913" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสาม' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:05:02.520" starttime="20220508 03:05:00.912"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:05:02.521" starttime="20220508 03:05:02.520"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:02.521" starttime="20220508 03:05:00.909"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:03.551" starttime="20220508 03:05:02.522"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:03.552" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:05:04.591" starttime="20220508 03:05:03.552"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:04.592" starttime="20220508 03:05:02.521"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:05.620" starttime="20220508 03:05:04.593"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:05.621" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:05:06.676" starttime="20220508 03:05:05.620"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:06.677" starttime="20220508 03:05:04.592"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:05:07.284" starttime="20220508 03:05:06.677"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:07.284" starttime="20220508 03:04:46.863"/>
+</test>
+<test id="s1-t3" name="TC_04 To-do tasks completed 1 task">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:05:07.287" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:05:13.039" starttime="20220508 03:05:07.287"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:05:13.670" starttime="20220508 03:05:13.040"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:05:13.672" starttime="20220508 03:05:13.671"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:13.672" starttime="20220508 03:05:07.286"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อแรก</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:13.674" level="INFO">Typing text 'ข้อสอบ BluePi ข้อแรก' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:05:15.366" starttime="20220508 03:05:13.673"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:05:15.367" starttime="20220508 03:05:15.367"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:15.368" starttime="20220508 03:05:13.673"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:16.401" starttime="20220508 03:05:15.369"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:16.402" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:05:17.444" starttime="20220508 03:05:16.401"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:17.444" starttime="20220508 03:05:15.368"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:18.476" starttime="20220508 03:05:17.445"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:18.477" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:05:19.536" starttime="20220508 03:05:18.476"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:19.536" starttime="20220508 03:05:17.444"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:20.571" starttime="20220508 03:05:19.537"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:20.572" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:05:21.614" starttime="20220508 03:05:20.571"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:21.614" starttime="20220508 03:05:19.536"/>
+</kw>
+<kw name="Click Completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:22.646" starttime="20220508 03:05:21.615"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:22.647" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[3]'.</msg>
+<status status="PASS" endtime="20220508 03:05:23.692" starttime="20220508 03:05:22.647"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:23.692" starttime="20220508 03:05:21.615"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:05:24.279" starttime="20220508 03:05:23.693"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:24.279" starttime="20220508 03:05:07.285"/>
+</test>
+<test id="s1-t4" name="TC_05 To-do tasks completed more than 1 tasks">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:05:24.282" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:05:29.981" starttime="20220508 03:05:24.281"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:05:30.617" starttime="20220508 03:05:29.982"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:05:30.618" starttime="20220508 03:05:30.617"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:30.618" starttime="20220508 03:05:24.281"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อแรก</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:30.620" level="INFO">Typing text 'ข้อสอบ BluePi ข้อแรก' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:05:32.314" starttime="20220508 03:05:30.619"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:05:32.315" starttime="20220508 03:05:32.314"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:32.315" starttime="20220508 03:05:30.619"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:33.345" starttime="20220508 03:05:32.316"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:33.346" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:05:34.394" starttime="20220508 03:05:33.346"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:34.394" starttime="20220508 03:05:32.316"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสอง</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:34.396" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสอง' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:05:36.002" starttime="20220508 03:05:34.395"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:05:36.003" starttime="20220508 03:05:36.003"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:36.004" starttime="20220508 03:05:34.395"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:37.032" starttime="20220508 03:05:36.004"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:37.033" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:05:38.067" starttime="20220508 03:05:37.033"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:38.068" starttime="20220508 03:05:36.004"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสาม</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:38.069" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสาม' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:05:39.678" starttime="20220508 03:05:38.069"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:05:39.679" starttime="20220508 03:05:39.679"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:39.680" starttime="20220508 03:05:38.068"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:40.708" starttime="20220508 03:05:39.680"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:40.709" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:05:41.748" starttime="20220508 03:05:40.708"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:41.748" starttime="20220508 03:05:39.680"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:42.780" starttime="20220508 03:05:41.749"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:42.781" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:05:43.841" starttime="20220508 03:05:42.780"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:43.842" starttime="20220508 03:05:41.749"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:44.874" starttime="20220508 03:05:43.843"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:44.875" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:05:45.925" starttime="20220508 03:05:44.875"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:45.926" starttime="20220508 03:05:43.842"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:46.954" starttime="20220508 03:05:45.927"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:46.955" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:05:47.999" starttime="20220508 03:05:46.954"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:48.000" starttime="20220508 03:05:45.926"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:49.032" starttime="20220508 03:05:48.001"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:49.035" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:05:50.074" starttime="20220508 03:05:49.032"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:50.074" starttime="20220508 03:05:48.000"/>
+</kw>
+<kw name="Click Completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:05:51.108" starttime="20220508 03:05:50.075"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:51.109" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[3]'.</msg>
+<status status="PASS" endtime="20220508 03:05:52.170" starttime="20220508 03:05:51.109"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:52.170" starttime="20220508 03:05:50.075"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:05:52.785" starttime="20220508 03:05:52.171"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:52.785" starttime="20220508 03:05:24.280"/>
+</test>
+<test id="s1-t5" name="TC_06 Delete To-do tasks 1 task">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:05:52.788" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:05:58.467" starttime="20220508 03:05:52.787"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:05:59.105" starttime="20220508 03:05:58.467"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:05:59.107" starttime="20220508 03:05:59.106"/>
+</kw>
+<status status="PASS" endtime="20220508 03:05:59.107" starttime="20220508 03:05:52.787"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อแรก</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:05:59.109" level="INFO">Typing text 'ข้อสอบ BluePi ข้อแรก' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:06:00.795" starttime="20220508 03:05:59.109"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:00.796" starttime="20220508 03:06:00.795"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:00.797" starttime="20220508 03:05:59.107"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:01.831" starttime="20220508 03:06:00.798"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:01.832" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:06:02.879" starttime="20220508 03:06:01.832"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:02.880" starttime="20220508 03:06:00.797"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:03.915" starttime="20220508 03:06:02.881"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:03.916" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:06:04.970" starttime="20220508 03:06:03.915"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:04.971" starttime="20220508 03:06:02.880"/>
+</kw>
+<kw name="Click Delete Todo-tasks" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Delete_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:06.004" starttime="20220508 03:06:04.972"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Delete_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:06.005" level="INFO">Clicking element '(//span[contains(@class,'ripple-container')])[5]'.</msg>
+<status status="PASS" endtime="20220508 03:06:07.047" starttime="20220508 03:06:06.004"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:07.048" starttime="20220508 03:06:04.971"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:06:07.632" starttime="20220508 03:06:07.048"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:07.632" starttime="20220508 03:05:52.786"/>
+</test>
+<test id="s1-t6" name="TC_07 Delete more than 1 To-do tasks">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:06:07.636" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:06:14.059" starttime="20220508 03:06:07.635"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:06:14.695" starttime="20220508 03:06:14.060"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:14.696" starttime="20220508 03:06:14.695"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:14.696" starttime="20220508 03:06:07.635"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อแรก</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:14.698" level="INFO">Typing text 'ข้อสอบ BluePi ข้อแรก' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:06:16.375" starttime="20220508 03:06:14.698"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:16.376" starttime="20220508 03:06:16.375"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:16.376" starttime="20220508 03:06:14.697"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:17.410" starttime="20220508 03:06:16.377"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:17.413" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:06:18.465" starttime="20220508 03:06:17.411"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:18.465" starttime="20220508 03:06:16.376"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสอง</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:18.467" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสอง' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:06:20.077" starttime="20220508 03:06:18.467"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:20.078" starttime="20220508 03:06:20.077"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:20.078" starttime="20220508 03:06:18.466"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:21.110" starttime="20220508 03:06:20.079"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:21.111" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:06:22.148" starttime="20220508 03:06:21.111"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:22.148" starttime="20220508 03:06:20.079"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสาม</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:22.149" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสาม' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:06:23.773" starttime="20220508 03:06:22.149"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:23.774" starttime="20220508 03:06:23.773"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:23.774" starttime="20220508 03:06:22.149"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:24.803" starttime="20220508 03:06:23.775"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:24.804" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:06:25.838" starttime="20220508 03:06:24.804"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:25.839" starttime="20220508 03:06:23.775"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:26.874" starttime="20220508 03:06:25.840"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:26.875" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:06:27.939" starttime="20220508 03:06:26.875"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:27.939" starttime="20220508 03:06:25.839"/>
+</kw>
+<kw name="Click Delete Todo-tasks" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Delete_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:28.976" starttime="20220508 03:06:27.940"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Delete_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:28.977" level="INFO">Clicking element '(//span[contains(@class,'ripple-container')])[5]'.</msg>
+<status status="PASS" endtime="20220508 03:06:30.032" starttime="20220508 03:06:28.976"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:30.032" starttime="20220508 03:06:27.940"/>
+</kw>
+<kw name="Click Delete Todo-tasks" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Delete_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:31.059" starttime="20220508 03:06:30.033"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Delete_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:31.060" level="INFO">Clicking element '(//span[contains(@class,'ripple-container')])[5]'.</msg>
+<status status="PASS" endtime="20220508 03:06:32.094" starttime="20220508 03:06:31.059"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:32.094" starttime="20220508 03:06:30.033"/>
+</kw>
+<kw name="Click Delete Todo-tasks" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Delete_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:33.122" starttime="20220508 03:06:32.095"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Delete_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:33.124" level="INFO">Clicking element '(//span[contains(@class,'ripple-container')])[5]'.</msg>
+<status status="PASS" endtime="20220508 03:06:34.167" starttime="20220508 03:06:33.123"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:34.168" starttime="20220508 03:06:32.095"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:06:34.755" starttime="20220508 03:06:34.168"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:34.755" starttime="20220508 03:06:07.633"/>
+</test>
+<test id="s1-t7" name="TC_08 Check completed all">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:06:34.758" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:06:41.663" starttime="20220508 03:06:34.758"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:06:42.296" starttime="20220508 03:06:41.663"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:42.297" starttime="20220508 03:06:42.297"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:42.297" starttime="20220508 03:06:34.757"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อแรก</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:42.299" level="INFO">Typing text 'ข้อสอบ BluePi ข้อแรก' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:06:44.010" starttime="20220508 03:06:42.298"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:44.011" starttime="20220508 03:06:44.010"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:44.011" starttime="20220508 03:06:42.298"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:45.044" starttime="20220508 03:06:44.012"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:45.045" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:06:46.092" starttime="20220508 03:06:45.045"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:46.092" starttime="20220508 03:06:44.011"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสอง</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:46.093" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสอง' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:06:47.785" starttime="20220508 03:06:46.093"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:47.786" starttime="20220508 03:06:47.785"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:47.786" starttime="20220508 03:06:46.092"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:48.822" starttime="20220508 03:06:47.787"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:48.822" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:06:49.859" starttime="20220508 03:06:48.822"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:49.859" starttime="20220508 03:06:47.786"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสาม</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:49.861" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสาม' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:06:51.447" starttime="20220508 03:06:49.860"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:51.448" starttime="20220508 03:06:51.447"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:51.448" starttime="20220508 03:06:49.859"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:52.489" starttime="20220508 03:06:51.449"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:52.490" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:06:53.531" starttime="20220508 03:06:52.490"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:53.532" starttime="20220508 03:06:51.448"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสี่</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:53.533" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสี่' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:06:55.118" starttime="20220508 03:06:53.533"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:06:55.119" starttime="20220508 03:06:55.118"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:55.119" starttime="20220508 03:06:53.532"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:56.159" starttime="20220508 03:06:55.120"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:56.160" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:06:57.203" starttime="20220508 03:06:56.159"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:57.204" starttime="20220508 03:06:55.119"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:06:58.243" starttime="20220508 03:06:57.205"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:06:58.244" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:06:59.311" starttime="20220508 03:06:58.244"/>
+</kw>
+<status status="PASS" endtime="20220508 03:06:59.311" starttime="20220508 03:06:57.204"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:00.346" starttime="20220508 03:06:59.312"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:00.347" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:07:01.404" starttime="20220508 03:07:00.346"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:01.405" starttime="20220508 03:06:59.312"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:02.442" starttime="20220508 03:07:01.406"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:02.443" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:07:03.505" starttime="20220508 03:07:02.443"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:03.505" starttime="20220508 03:07:01.405"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:04.533" starttime="20220508 03:07:03.506"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:04.534" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:07:05.590" starttime="20220508 03:07:04.533"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:05.590" starttime="20220508 03:07:03.506"/>
+</kw>
+<kw name="Click Completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:06.622" starttime="20220508 03:07:05.591"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:06.623" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[3]'.</msg>
+<status status="PASS" endtime="20220508 03:07:07.676" starttime="20220508 03:07:06.622"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:07.677" starttime="20220508 03:07:05.591"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:07:08.252" starttime="20220508 03:07:07.677"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:08.252" starttime="20220508 03:06:34.756"/>
+</test>
+<test id="s1-t8" name="TC_09 Delete completed 1 completed">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:07:08.255" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:07:13.716" starttime="20220508 03:07:08.254"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:07:14.361" starttime="20220508 03:07:13.717"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:07:14.362" starttime="20220508 03:07:14.361"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:14.362" starttime="20220508 03:07:08.254"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อแรก</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:14.364" level="INFO">Typing text 'ข้อสอบ BluePi ข้อแรก' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:07:16.043" starttime="20220508 03:07:14.363"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:07:16.044" starttime="20220508 03:07:16.044"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:16.044" starttime="20220508 03:07:14.363"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:17.199" starttime="20220508 03:07:16.045"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:17.200" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:07:18.281" starttime="20220508 03:07:17.199"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:18.281" starttime="20220508 03:07:16.045"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:19.343" starttime="20220508 03:07:18.282"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:19.348" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:07:20.431" starttime="20220508 03:07:19.343"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:20.432" starttime="20220508 03:07:18.282"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:21.465" starttime="20220508 03:07:20.432"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:21.465" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:07:22.515" starttime="20220508 03:07:21.465"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:22.515" starttime="20220508 03:07:20.432"/>
+</kw>
+<kw name="Click Completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:23.548" starttime="20220508 03:07:22.516"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:23.548" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[3]'.</msg>
+<status status="PASS" endtime="20220508 03:07:24.612" starttime="20220508 03:07:23.548"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:24.613" starttime="20220508 03:07:22.515"/>
+</kw>
+<kw name="Click Delete Completed" library="Keywords">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:07:24.613" starttime="20220508 03:07:24.613"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Delete_completed}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:24.614" level="INFO">Clicking button '//*[@id="1"]'.</msg>
+<status status="PASS" endtime="20220508 03:07:27.192" starttime="20220508 03:07:24.614"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:27.192" starttime="20220508 03:07:24.613"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:07:27.752" starttime="20220508 03:07:27.192"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:27.753" starttime="20220508 03:07:08.253"/>
+</test>
+<test id="s1-t9" name="TC_10 Delete completed all">
+<kw type="SETUP" name="Open Browser To TO DO LIST" library="Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220508 03:07:27.756" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" endtime="20220508 03:07:34.382" starttime="20220508 03:07:27.754"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220508 03:07:35.021" starttime="20220508 03:07:34.382"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:07:35.022" starttime="20220508 03:07:35.022"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:35.022" starttime="20220508 03:07:27.754"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อแรก</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:35.023" level="INFO">Typing text 'ข้อสอบ BluePi ข้อแรก' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:07:36.733" starttime="20220508 03:07:35.023"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:07:36.734" starttime="20220508 03:07:36.733"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:36.734" starttime="20220508 03:07:35.023"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:37.774" starttime="20220508 03:07:36.734"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:37.774" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:07:38.825" starttime="20220508 03:07:37.774"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:38.825" starttime="20220508 03:07:36.734"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสอง</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:38.826" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสอง' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:07:40.509" starttime="20220508 03:07:38.826"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:07:40.510" starttime="20220508 03:07:40.510"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:40.510" starttime="20220508 03:07:38.825"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:41.539" starttime="20220508 03:07:40.511"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:41.540" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:07:42.575" starttime="20220508 03:07:41.539"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:42.575" starttime="20220508 03:07:40.510"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสาม</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:42.577" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสาม' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:07:44.186" starttime="20220508 03:07:42.576"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:07:44.187" starttime="20220508 03:07:44.186"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:44.187" starttime="20220508 03:07:42.576"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:45.215" starttime="20220508 03:07:44.188"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:45.216" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:07:46.256" starttime="20220508 03:07:45.216"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:46.257" starttime="20220508 03:07:44.187"/>
+</kw>
+<kw name="Input item" library="Keywords">
+<arg>ข้อสอบ BluePi ข้อสี่</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:46.258" level="INFO">Typing text 'ข้อสอบ BluePi ข้อสี่' into text field '//input[@type='text']'.</msg>
+<status status="PASS" endtime="20220508 03:07:47.848" starttime="20220508 03:07:46.258"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:07:47.849" starttime="20220508 03:07:47.848"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:47.849" starttime="20220508 03:07:46.257"/>
+</kw>
+<kw name="Click Button Add" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:07:48.879" starttime="20220508 03:07:47.850"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:07:48.880" level="INFO">Clicking element '//*[@id="add-item"]/button/i'.</msg>
+<status status="PASS" endtime="20220508 03:07:49.933" starttime="20220508 03:07:48.880"/>
+</kw>
+<status status="PASS" endtime="20220508 03:07:49.933" starttime="20220508 03:07:47.850"/>
+</kw>
+<kw name="Click To-do task" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:18:22.365" starttime="20220508 03:07:49.934"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:22.366" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[2]'.</msg>
+<status status="PASS" endtime="20220508 03:18:23.418" starttime="20220508 03:18:22.365"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:23.418" starttime="20220508 03:07:49.934"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:18:24.444" starttime="20220508 03:18:23.419"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:24.445" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:18:25.490" starttime="20220508 03:18:24.444"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:25.490" starttime="20220508 03:18:23.418"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:18:26.518" starttime="20220508 03:18:25.491"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:26.519" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:18:27.569" starttime="20220508 03:18:26.519"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:27.569" starttime="20220508 03:18:25.491"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:18:28.642" starttime="20220508 03:18:27.570"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:28.643" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:18:29.693" starttime="20220508 03:18:28.642"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:29.693" starttime="20220508 03:18:27.569"/>
+</kw>
+<kw name="Click To-do tasks completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:18:30.725" starttime="20220508 03:18:29.693"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_todo_tasks_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:30.726" level="INFO">Clicking element '(//span[contains(@data-upgraded,',MaterialRipple')])[4]'.</msg>
+<status status="PASS" endtime="20220508 03:18:32.042" starttime="20220508 03:18:30.725"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:32.043" starttime="20220508 03:18:29.693"/>
+</kw>
+<kw name="Click Completed" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220508 03:18:33.348" starttime="20220508 03:18:32.048"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Click_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:33.352" level="INFO">Clicking element '(//span[@data-upgraded=',MaterialRipple'])[3]'.</msg>
+<status status="PASS" endtime="20220508 03:18:34.773" starttime="20220508 03:18:33.349"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:34.775" starttime="20220508 03:18:32.045"/>
+</kw>
+<kw name="Click Delete Completed" library="Keywords">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:18:34.801" starttime="20220508 03:18:34.779"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Delete_completed}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:34.805" level="INFO">Clicking button '//*[@id="1"]'.</msg>
+<status status="PASS" endtime="20220508 03:18:37.854" starttime="20220508 03:18:34.803"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:37.858" starttime="20220508 03:18:34.776"/>
+</kw>
+<kw name="Click Delete Completed" library="Keywords">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:18:37.930" starttime="20220508 03:18:37.914"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Delete_completed}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:37.941" level="INFO">Clicking button '//*[@id="1"]'.</msg>
+<status status="PASS" endtime="20220508 03:18:41.093" starttime="20220508 03:18:37.932"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:41.097" starttime="20220508 03:18:37.861"/>
+</kw>
+<kw name="Click Delete Completed" library="Keywords">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:18:41.122" starttime="20220508 03:18:41.109"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Delete_completed}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:41.130" level="INFO">Clicking button '//*[@id="1"]'.</msg>
+<status status="PASS" endtime="20220508 03:18:43.842" starttime="20220508 03:18:41.124"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:43.842" starttime="20220508 03:18:41.100"/>
+</kw>
+<kw name="Click Delete Completed" library="Keywords">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${Delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" endtime="20220508 03:18:43.843" starttime="20220508 03:18:43.843"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Delete_completed}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220508 03:18:43.844" level="INFO">Clicking button '//*[@id="1"]'.</msg>
+<status status="PASS" endtime="20220508 03:18:46.479" starttime="20220508 03:18:43.843"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:46.479" starttime="20220508 03:18:43.842"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220508 03:18:47.103" starttime="20220508 03:18:46.480"/>
+</kw>
+<status status="PASS" endtime="20220508 03:18:47.103" starttime="20220508 03:07:27.753"/>
+</test>
+<status status="PASS" endtime="20220508 03:18:47.105" starttime="20220508 03:04:32.020"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="9">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="Testcase" pass="9">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
